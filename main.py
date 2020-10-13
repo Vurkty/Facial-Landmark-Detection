@@ -145,9 +145,9 @@ class Solver(object):
         self.device = torch.device('cuda:' + self.cuda_num
                                     if torch.cuda.is_available() else 'cpu')
         print(self.device)
-        from HGs import VuHGs
-        from VuFAN import VuFAN
-        self.net = VuHGs()
+        from HGs import HGs
+        from FAN import FAN
+        self.net = HGs()
 
         '''
         to load the saved model
