@@ -73,7 +73,7 @@ class Lin(nn.Module):
     def forward(self,x):
         return self.relu(self.bn(self.conv(x)))
 
-class VuHGs(nn.Module):
+class HGs(nn.Module):
     def __init__(self):
         super(VuHGs,self).__init__()
         self.__conv1 = nn.Conv2d(1,64,1)
