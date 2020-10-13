@@ -135,10 +135,10 @@ class HG_Module(nn.Module):
     def forward(self, x):
         return self._forward(self.depth, x)
 
-class VuFAN(nn.Module):
+class FAN(nn.Module):
 
     def __init__(self, num_modules=1):
-        super(VuFAN, self).__init__()
+        super(FAN, self).__init__()
         self.num_modules = num_modules
 
         # Base part
